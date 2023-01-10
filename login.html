@@ -10,7 +10,7 @@
         .login-form {
             display: flex;
             flex-direction: column;
-            width: 300px;
+            width: 50%;
             border: 2px solid gray;
         }
 
@@ -27,19 +27,34 @@
             color: aliceblue;
             margin: 0 50px;
         }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>
-        Please Login
-    </h1>
-    <form action="" class="login-form">
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Login</a>
+        </nav>
+    </header>
 
-        <input type="email" name="email" id="" placeholder="Enter Email" required>
-        <input type="password" name="password" id="" placeholder="Password" required> <input type="submit"
-            value="Login">
-    </form>
+    <section class="container">
+        <form action="" class="login-form">
+
+            <input type="email" name="email" id="" placeholder="Enter Email" required>
+            <input type="password" name="password" id="" placeholder="Password" required>
+            <input style="margin-bottom: 20px;" type="submit" value="Login">
+        </form>
+    </section>
+
 </body>
 
 </html>
